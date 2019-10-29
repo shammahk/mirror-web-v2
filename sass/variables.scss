@@ -1,0 +1,127 @@
+// Font
+
+@font-face {
+  font-family: "phenomena";
+  src: url(../fonts/Phenomena-Regular.ttf);
+}
+
+@font-face {
+  font-family: "phenomena-bold";
+  src: url(../fonts/Phenomena-Bold.ttf);
+}
+
+// Colours
+
+$primary-bg : #10142D;
+$secondary-bg : #F5F5F5;
+$c-primary-font : #595959;
+$c-header : #232323;
+$c-second-header : #0067A6;
+$green-accent : #43A047;
+$red-accent : #E74C3C;
+
+$overlay : rgba(16, 20, 45, 0.8);
+
+// Sizing
+.section {
+  width: 100%;
+  padding:100px 10%;
+
+}
+
+.section-full {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-padding-btm {
+  padding: 0 0 50px 0;
+}
+
+.padding-80 {
+  padding: 80px 0 ;
+}
+ 
+.mg-top {
+  margin-top: 50px !important;
+}
+
+// Specs 
+// Background
+
+.bg-white {
+  background: #ffffff;
+}
+ 
+.bg-gray {
+  background: $secondary-bg;
+}
+
+.bg-navy {
+  background: $primary-bg;
+}
+
+// Typography 
+.header-2 {
+  color: $c-second-header;
+  font-size: 2.5em; 
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.header-3 {
+  color: $c-header;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+
+// Font Colour
+.c-primary {
+  color: $c-primary-font;
+}
+
+.c-red {
+  color: $red-accent;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+// Cta
+.cta-holder { 
+  margin: 70px auto 20px!important;
+  text-align: center;
+}
+.cta {
+  padding: 0.5em 2em;
+  font-size: 2em;
+  text-align: center;
+  color: #ffffff ;
+  background: #43A047; 
+  position: relative; 
+  margin: 50px auto !important;  
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: white;
+    border: $green-accent solid 1px;
+    color: $green-accent;
+  }
+}  

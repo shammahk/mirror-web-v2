@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="97" viewBox="0 0 94 97">
+  <defs>
+    <filter id="Ellipse_2" x="0" y="0" width="94" height="97" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff6f6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="play_icon" data-name="play icon" transform="translate(14 14)">
+    <path id="Icon_ionic-md-play" data-name="Icon ionic-md-play" d="M6.75,3.656V32.344L29.25,18Z" transform="translate(18.2 18)" fill="#fcf8f8"/>
+    <g transform="matrix(1, 0, 0, 1, -14, -14)" filter="url(#Ellipse_2)">
+      <g id="Ellipse_2-2" data-name="Ellipse 2" transform="translate(14 14)" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-width="5">
+        <ellipse cx="33" cy="34.5" rx="33" ry="34.5" stroke="none"/>
+        <ellipse cx="33" cy="34.5" rx="35.5" ry="37" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
