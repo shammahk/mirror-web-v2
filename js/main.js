@@ -50,6 +50,17 @@ const changeVisibility = () => {
   }, 1000);
 }
 
+// toggle NavBar 
+const navBar = document.querySelector('.nav-bar2')
+
+const activateNav = () => {
+  navBar.classList.add('show')  ;
+}
+
+const closeBtn = () => {
+  navBar.classList.remove('show');
+}
+
 const startApp = () => { 
   setTimeout(() => {
       changeVisibility();
@@ -59,3 +70,4 @@ const startApp = () => {
 window.addEventListener('load', () => {
   startApp();
 })
+

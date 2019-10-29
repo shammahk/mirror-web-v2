@@ -106,13 +106,13 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: phenomena;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 #intro {
@@ -157,7 +157,6 @@ body {
   border-right: 0.15em solid #ffffff;
   white-space: nowrap;
   margin: 0 auto;
-  animation-delay: 2s;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
@@ -237,6 +236,9 @@ header .nav-bar .nav-item.btn-contact {
 }
 header .nav-bar .nav-item.btn-contact:hover {
   border-radius: 0;
+}
+header .toggle-nav {
+  display: none;
 }
 
 #hero {
@@ -474,6 +476,105 @@ footer .copyright {
   position: absolute;
   right: 2.5em;
   bottom: 1em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .nav-bar2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    right: -100%;
+    overflow-x: hidden;
+    background: #10142D;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-bar2.show {
+    right: 0;
+  }
+  .nav-bar2 .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 60px;
+    color: #ffffff;
+  }
+  .nav-bar2 .close-btn:hover {
+    cursor: pointer;
+    color: #E74C3C;
+  }
+  .nav-bar2 .nav-item {
+    color: #ffffff;
+    font-size: 2em;
+    list-style-type: none;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-bar2 .nav-item:hover {
+    color: #E74C3C;
+  }
+
+  header .nav-bar {
+    display: none;
+  }
+  header .toggle-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .toggle-nav:hover {
+    cursor: pointer;
+  }
+  header .toggle-nav:hover > div {
+    background: #E74C3C;
+  }
+  header .toggle-nav > div {
+    height: 7px;
+    background: #0067A6;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  header .toggle-nav > div.top {
+    width: 30px;
+  }
+  header .toggle-nav > div.mid {
+    width: 30px;
+  }
+  header .toggle-nav > div.btm {
+    width: 15px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
