@@ -111,6 +111,8 @@ html {
 }
 
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   font-family: phenomena;
 }
@@ -179,6 +181,8 @@ body {
 #main-page {
   position: relative;
   transition: 1s ease-in-out;
+  top: 0;
+  width: 100vw;
 }
 #main-page.hide {
   right: -110vw;
@@ -444,6 +448,8 @@ footer {
   padding-right: 2em !important;
   color: #ffffff;
   position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 footer .footnote {
   font-size: 2em;
@@ -478,48 +484,48 @@ footer .copyright {
   bottom: 1em;
 }
 
+.nav-bar2 {
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  right: -100%;
+  overflow-x: hidden;
+  background: #10142D;
+  transition: 0.3s ease-in-out;
+}
+.nav-bar2.show {
+  right: 0;
+}
+.nav-bar2 .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 60px;
+  color: #ffffff;
+}
+.nav-bar2 .close-btn:hover {
+  cursor: pointer;
+  color: #E74C3C;
+}
+.nav-bar2 .nav-item {
+  color: #ffffff;
+  font-size: 2em;
+  list-style-type: none;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+.nav-bar2 .nav-item:hover {
+  color: #E74C3C;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
-  .nav-bar2 {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    top: 0;
-    right: -100%;
-    overflow-x: hidden;
-    background: #10142D;
-    transition: 0.3s ease-in-out;
-  }
-  .nav-bar2.show {
-    right: 0;
-  }
-  .nav-bar2 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    font-size: 60px;
-    color: #ffffff;
-  }
-  .nav-bar2 .close-btn:hover {
-    cursor: pointer;
-    color: #E74C3C;
-  }
-  .nav-bar2 .nav-item {
-    color: #ffffff;
-    font-size: 2em;
-    list-style-type: none;
-    margin-bottom: 10px;
-    transition: 0.3s ease-in-out;
-  }
-  .nav-bar2 .nav-item:hover {
-    color: #E74C3C;
-  }
-
   header .nav-bar {
     display: none;
   }
@@ -551,15 +557,133 @@ footer .copyright {
   header .toggle-nav > div.btm {
     width: 15px;
   }
+
+  #hero {
+    height: 80vh;
+    padding: 0;
+  }
+  #hero .hero-content {
+    padding: 100px 2% 0;
+  }
+  #hero .hero-content .bible-quote {
+    font-size: 2em;
+    width: 70%;
+  }
+
+  #about {
+    width: 100%;
+  }
+  #about .about-cards {
+    padding: 0 10px;
+    display: block;
+  }
+  #about .mission-card {
+    margin-bottom: 40px !important;
+  }
+  #about .mission-card .missions {
+    width: 100%;
+    margin-left: 5px;
+  }
+  #about .about-card {
+    width: 100%;
+  }
+  #about .about-card .info {
+    width: 100%;
+  }
+
+  .slides-holder .slide {
+    width: 98vw;
+  }
+  .slides-holder .overlay .movie-info {
+    padding-right: 10px;
+  }
+
+  #ministered .header-2 {
+    overflow-wrap: normal;
+  }
+
+  .card {
+    width: 90%;
+  }
+  .card p {
+    width: 90%;
+  }
+  .card .cta {
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+  }
+
+  footer {
+    display: block;
+    padding-bottom: 40px !important;
+  }
+  footer .footnote {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  footer .footer-tab {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  footer .social {
+    margin-bottom: 20px;
+  }
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 770px) {
   .example {
     background: green;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+  header .nav-bar {
+    display: none;
+  }
+  header .toggle-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .toggle-nav:hover {
+    cursor: pointer;
+  }
+  header .toggle-nav:hover > div {
+    background: #E74C3C;
+  }
+  header .toggle-nav > div {
+    height: 7px;
+    background: #0067A6;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  header .toggle-nav > div.top {
+    width: 30px;
+  }
+  header .toggle-nav > div.mid {
+    width: 30px;
+  }
+  header .toggle-nav > div.btm {
+    width: 15px;
+  }
+
+  #hero {
+    height: 80vh;
+  }
+  #hero .hero-content {
+    padding: 100px 2% 0;
+  }
+  #hero .hero-content .bible-quote {
+    font-size: 2.5em;
+    width: 70%;
+  }
+
   .example {
     background: blue;
   }
