@@ -506,6 +506,13 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
 
+  // intro 
+  #intro {
+    .typewriter p {
+      font-size: 0.5em !important;
+    }
+  }
+
   header {
     .nav-bar {
       display: none; 
@@ -649,12 +656,12 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px)  and (max-width: 770px){
+@media (min-width: 600px)  {
   .example {background: green;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 770px) {
 
   header {
     .nav-bar {
