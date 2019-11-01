@@ -327,7 +327,9 @@ header {
 
   .church-slide {
     width: fit-content !important;
+    width: -moz-fit-content;
     height: fit-content !important;
+    height: -moz-fit-content;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -514,6 +516,12 @@ footer {
   }
 
   header {
+    height: 60px;
+
+    .logo {
+      width: 80px;
+      height: calc(55px-37px);
+    }
     .nav-bar {
       display: none; 
     }
@@ -534,10 +542,10 @@ footer {
       }
 
       > div {
-        height: 7px;
+        height: 5px;
         background: $c-second-header;
         border-radius: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         transition: 0.3s ease-in-out;
 
         &.top {
@@ -560,6 +568,7 @@ footer {
   #hero {
     height: 80vh;
     padding: 0;
+    margin-top: 60px;
 
     .hero-content {
       // change bg image
@@ -644,7 +653,7 @@ footer {
     }
 
     .social {
-      margin-bottom: 20px;
+      margin-bottom: 20px; 
     }
 
     img {
@@ -664,6 +673,8 @@ footer {
 @media (min-width: 768px) and (max-width: 770px) {
 
   header {
+    height: 60px !important;
+
     .nav-bar {
       display: none; 
     }
@@ -676,7 +687,7 @@ footer {
 
       &:hover {
         cursor: pointer;
-
+ 
         >div {
           background: $red-accent;
 
@@ -685,7 +696,7 @@ footer {
 
       > div {
         height: 7px;
-        background: $c-second-header;
+        background: $primary-bg;
         border-radius: 10px;
         margin-bottom: 5px;
         transition: 0.3s ease-in-out;
