@@ -308,9 +308,11 @@ header .toggle-nav {
 }
 #about .mission-card .missions p {
   position: relative;
+  border-bottom: solid 1px gainsboro;
+  padding-bottom: 0.5em;
+  text-align: justify;
 }
 #about .mission-card .missions p::before {
-  content: "";
   width: 20px;
   height: 10px;
   background: #0067A6;
@@ -321,6 +323,10 @@ header .toggle-nav {
 #about .info {
   width: 90%;
   margin: 0 auto;
+}
+#about .info p {
+  border-bottom: solid 1px gainsboro;
+  padding-bottom: 0.5em;
 }
 
 .slides-holder {
@@ -492,17 +498,18 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 85%;
   height: 100%;
   z-index: 1000;
   top: 0;
   right: -100%;
   overflow-x: hidden;
   background: #10142D;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .nav-bar2.show {
   right: 0;
+  box-shadow: 0 0 500px 500px rgba(0, 0, 0, 0.7);
 }
 .nav-bar2 .close-btn {
   position: absolute;
@@ -545,7 +552,7 @@ footer .copyright {
   header .toggle-nav {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
   header .toggle-nav:hover {
@@ -556,7 +563,7 @@ footer .copyright {
   }
   header .toggle-nav > div {
     height: 5px;
-    background: #0067A6;
+    background: #10142D;
     border-radius: 10px;
     margin-bottom: 3px;
     transition: 0.3s ease-in-out;
@@ -664,7 +671,7 @@ footer .copyright {
   header .toggle-nav {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
   header .toggle-nav:hover {
@@ -681,13 +688,13 @@ footer .copyright {
     transition: 0.3s ease-in-out;
   }
   header .toggle-nav > div.top {
-    width: 30px;
+    width: 40px;
   }
   header .toggle-nav > div.mid {
     width: 30px;
   }
   header .toggle-nav > div.btm {
-    width: 15px;
+    width: 30px;
   }
 
   #hero {

@@ -237,9 +237,12 @@ header {
       
       p {
         position: relative;
+        border-bottom: solid 1px gainsboro;
+        padding-bottom: 0.5em;
+        text-align: justify;
         
         &::before {
-          content: "";
+          // content: "";
           width: 20px;
           height: 10px;
           background: $c-second-header;
@@ -255,6 +258,12 @@ header {
   .info {
     width: 90%;
     margin: 0 auto;
+
+    p {
+      border-bottom: solid 1px gainsboro;
+      padding-bottom: 0.5em;
+      // text-align: justify;
+    }
   }
 }
 
@@ -464,17 +473,18 @@ footer {
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 85%;
   height: 100%;
   z-index: 1000;
   top: 0;
   right: -100%;
   overflow-x: hidden;
   background: $primary-bg;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   
   &.show {
     right: 0;
+    box-shadow: 0 0 500px 500px rgba(0,0,0,0.7);
   }
   
   .close-btn {
@@ -529,7 +539,7 @@ footer {
     .toggle-nav {
       display: flex;
       flex-flow: column;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
 
       &:hover {
@@ -543,7 +553,7 @@ footer {
 
       > div {
         height: 5px;
-        background: $c-second-header;
+        background: $primary-bg;
         border-radius: 10px;
         margin-bottom: 3px;
         transition: 0.3s ease-in-out;
@@ -682,7 +692,7 @@ footer {
     .toggle-nav {
       display: flex;
       flex-flow: column;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
 
       &:hover {
@@ -702,7 +712,7 @@ footer {
         transition: 0.3s ease-in-out;
 
         &.top {
-          width: 30px;
+          width: 40px;
         }
 
         &.mid {
@@ -710,7 +720,7 @@ footer {
         }
 
         &.btm {
-          width: 15px;
+          width: 30px;
         }
       }
     }
