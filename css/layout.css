@@ -65,6 +65,7 @@
 }
 .header-3 img {
   margin-right: 10px;
+  min-width: 40px;
 }
 
 .c-primary {
@@ -193,6 +194,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {

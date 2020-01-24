@@ -6,6 +6,8 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
+    prevArrow: '<i class="fa fa-angle-left"></i>',
+    nextArrow: '<i class="fa fa-angle-right"></i>',
     variableWidth: true,
     infinite: true,
     speed: 1500,
@@ -13,7 +15,6 @@ $(document).ready(function(){
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 3
@@ -22,7 +23,6 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1
