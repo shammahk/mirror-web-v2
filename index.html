@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="assets/mirror_logo_white_A1_Rectangle_44_pattern@2x.png" type="image/x-icon">
   <title>The Mirror Drama Ministry:: Ministering God's Word to Man kind</title>
 </head>
-<body>
+<body id="body">
   <!-- Intro -->
   <div class="intro bg-navy" id="intro">
      <div class="center">
@@ -196,6 +196,13 @@
   
     </section>
   
+    <!-- MODAL -->
+    <div class="modal-holder" id="imgmodal">
+      <img src="" alt="">
+      <div class="close-btn" onclick="closeModal()">&times;</div>
+    </div>
+
+
     <!-- Portfolio -->
     <section class="section-full bg-gray" id="portfolio">
       <h2 class="header-2">
@@ -205,25 +212,24 @@
         <img src="./assets/mdi-camera-wirelesscamera.svg" alt="">
         Action Photos
       </h3>
-  
       <div class="slides-holder">
-        <figure class="image-slide slide">
-          <img src="./assets/IMG-20190830-WA0006.jpg" alt="">
+        <figure class="image-slide slide" onclick="imgModal(event)">
+          <img src="./assets/IMG-20190830-WA0006.jpg" alt="" >
         </figure>
-        <figure class="image-slide slide">
-          <img src="./assets/IMG-20190830-WA0007.jpg" alt="">
+        <figure class="image-slide slide" onclick="imgModal(event)">
+          <img src="./assets/IMG-20190830-WA0007.jpg" alt="" >
         </figure>
-        <figure class="image-slide slide">
-          <img src="./assets/IMG-20190830-WA0009.jpg" alt="">
+        <figure class="image-slide slide" onclick="imgModal(event)">
+          <img src="./assets/IMG-20190830-WA0009.jpg" alt="" >
         </figure>
-        <figure class="image-slide slide">
-          <img src="./assets/IMG-20190830-WA0011.jpg" alt="">
+        <figure class="image-slide slide" onclick="imgModal(event)">
+          <img src="./assets/IMG-20190830-WA0011.jpg" alt="" >
         </figure>
-        <figure class="image-slide slide">
-          <img src="./assets/IMG-20190830-WA0013.jpg" alt="">
+        <figure class="image-slide slide" onclick="imgModal(event)">
+          <img src="./assets/IMG-20190830-WA0013.jpg" alt="" >
         </figure>
       </div>
-  
+       
       <h3 class="header-3 mg-top">
           <img src="./assets/mdi-movie-roll.svg" alt="">
           Some of Our Videos

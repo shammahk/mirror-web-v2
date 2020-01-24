@@ -71,3 +71,36 @@ window.addEventListener('load', () => {
   startApp();
 })
 
+// Activate Image Modal 
+function imgModal(event) {
+  let imageModal = document.querySelector("#imgmodal");
+  let image = document.querySelector("#imgmodal img");
+
+  image.src = event.target.src;
+  imageModal.classList.add("active");
+
+  // Prevent window scroll
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop);
+  }
+  console.log(event.target, event.target.src);
+  $('.slides-holder').slick({
+    autoplay: false,
+  });
+}
+
+function closeModal() {
+  let imageModal = document.querySelector("#imgmodal");
+  
+  imageModal.classList.remove("active");
+
+  window.onscroll = function () {
+    
+  }
+  $('.slides-holder').slick({
+    autoplay: true,
+  });
+}
