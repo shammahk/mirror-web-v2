@@ -65,7 +65,7 @@
 }
 .header-3 img {
   margin-right: 10px;
-  min-width: 40px;
+  min-width: 30px;
 }
 
 .c-primary {
@@ -273,6 +273,7 @@ header .toggle-nav {
   width: 60%;
   color: #ffffff;
   font-size: 3.2em;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 5px;
   position: relative;
